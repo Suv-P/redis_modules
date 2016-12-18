@@ -15,13 +15,16 @@ a key with string value.
 
 Building the module
 -------------------
-% gcc -fPIC -std=gnu99 -c -o ntoa_aton.o inet_aton_ntoa.c 
-
-% ld -o inet_aton_ntoa.so ntoa_aton.o -shared -Bsymbolic -lc
+```
+gcc -fPIC -std=gnu99 -c -o ntoa_aton.o inet_aton_ntoa.c 
+ld -o inet_aton_ntoa.so ntoa_aton.o -shared -Bsymbolic -lc
+```
 
 Loading the module in Redis
 ---------------------------
-% ./redis-server --loadmodule /path/to/generated/library/inet_aton_ntoa.so
+```
+./redis-server --loadmodule /path/to/generated/library/inet_aton_ntoa.so
+```
 
 Sample Calls
 ------------
@@ -114,7 +117,9 @@ TRUE
 FALSE
 
 127.0.0.1:6379> INET.EXISTS k7 10.10.199.111
-TRUE                                                                                                                             ```                  
+TRUE   
+
+```                  
 
 TODO
 ----
