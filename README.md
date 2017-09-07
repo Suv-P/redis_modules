@@ -121,10 +121,10 @@ TRUE
 
 ```                  
 
-TODO
+TODO ( Not promised )
 ----
 
-In the future, a data type to hold the IP Address in both notations (or just one, as provided during set operation) can be introduced. This will provide readily available ip addresses in both forms and hence help perform faster operations using them. Say, we want to match specific IP Address' and have set them in Redis. The address that comes in (which may be in either of the two notations),  can be matched in dotted or integer form in a single API call at the redis layer itself. This way we will have faster processing, for time crucial applications (although at the cost of higher memory footprint).
+A data type to hold the IP Address in both notations (or just one, as provided during set operation) can be introduced. This will provide readily available ip addresses in both forms and hence help perform faster operations using them. Say, we want to match specific IP Address' and have set them in Redis. The address that comes in (which may be in either of the two notations),  can be matched in dotted or integer form in a single API call at the redis layer itself. This way we will have faster processing, for time crucial applications (although at the cost of higher memory footprint).
 
 * Functions _exists_ will also take a set as 2nd argument. It will indicate if the 1st argument is present in the set.
 * ntoa and aton API will return an array incase of key of type list
